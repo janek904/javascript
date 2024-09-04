@@ -1,0 +1,7 @@
+console.log("text",404)
+console.log(window)
+console.table([1,2,3,"jeden","dwa","trzy"])
+console.group("bulbulator")
+console.log("sigma")
+console.log("skibidi")
+console.groupEnd()
