@@ -7,6 +7,8 @@
 <style>
     header{
         background-color: #ffdfd3;
+        padding: 0;
+        margin: 0;
     }
     section{
         float:left;
@@ -14,11 +16,12 @@
     }
     .side_column{
         background-color: #D291BC;
-        width:25%;
+        width:100%;
+        justify-content: center;
     }
     .main_column{
         background-color: #fec8d8;
-        width: 50%;
+        
     }
     footer{
         background-color: #957dad;
@@ -26,7 +29,10 @@
     }
     h1{
         margin:0%;
-        padding: 20px;
+        padding: 40px;
+    }
+   .row {
+display: flex;
     }
     
 </style>
@@ -43,7 +49,7 @@
 <section  class=" main_column">
     <h1>Kolumna II</h1>
 </section>
-<section class="side_column">
+<section class="side_column"  id="eee">
     <h1>Kolumna III</h1>
 </section>
 </main>
