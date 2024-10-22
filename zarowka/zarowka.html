@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zarowka</title>
+    <style>
+        html, body {
+           
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        
+        }
+        #light {
+            margin-bottom: 80px;
+        }
+        #controlPanel {
+            width: 75%;
+            border: 2px solid rgb(20, 48, 209);
+            padding: 10px;
+        }
+        #controlPanel table {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><img id="light" src="zarowka1.jpg" alt="Żarówka"></div>
+    <div id="controlPanel">
+        <table>
+            <tr>
+                <td class="switch"><input id="powerOn" type="button" value="Włącz"></td>
+                <td class="switch"><input id="powerOff" type="button" value="Wyłącz"></td>
+            </tr>
+            <tr>
+                <td><input id="radioOn" type="radio" name="status" value="On"><label for="radioOn">Włączone</label></td>
+                <td><input id="radioOff" type="radio" name="status" value="Off"><label for="radioOff">Wyłączone</label></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="switch"><input id="toggleCheck" type="checkbox"><label id="toggleLabel" for="toggleCheck">Wyłączone</label></td>
+            </tr>
+        </table>
+    </div>
+    <script src="zarowka.js"></script>
+</body>
+</html>
