@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokument</title>
+    <style>
+        #rectangle {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="rectangleForm">
+        <label for="width">Szerokość (cm):</label>
+        <input type="number" id="width" name="width" value="0" min="0" max="20">
+        <label for="height">Wysokość (cm):</label>
+        <input type="number" id="height" name="height" value="0" min="0" max="20">
+        <label for="color">Kolor:</label>
+        <input type="color" id="color" name="color" value="#ffffff">
+        <button type="button" onclick="drawRectangle()">Narysuj</button>
+    </form>
+
+    <div id="rectangle"></div>
+    <p id="info"></p>
+    <p id=" info2"></p>
+
+    <script>
+        function drawRectangle() {
+            const width = document.getElementById('width').value;
+            const height = document.getElementById('height').value;
+            const color = document.getElementById('color').value;
+            const obwod = 2 * (parseFloat(width) + parseFloat(height));
+            const pole = parseFloat(width) * parseFloat(height);
+            const rectangleDiv = document.getElementById('rectangle');
+            rectangleDiv.style.width = `${width}cm`;
+            rectangleDiv.style.height = `${height}cm`;
+            rectangleDiv.style.backgroundColor = color;
+            rectangleDiv.style.border = "1px solid #000";
+            const infoParagraph = document.getElementById('info');
+            const infoParagraph1 = document.getElementById('info2');
+            infoParagraph.textContent = `Obwód prostokąta jest równy ${obwod} cm`;
+            infoParagraph1.textContent = `Pole prostokąta jest równe ${pole} cm²`;
+        }
+    </script>
+</body>
+</html>
