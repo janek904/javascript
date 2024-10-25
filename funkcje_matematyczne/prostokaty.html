@@ -18,16 +18,16 @@ Kolor:      <input type="color" value="#ffffff" id="color">
     <p id="info2"></p>
     <script>
         const przycisk = document.querySelector('button');
-            const input1 = document.getElementById("#width");
-            const input2 = document.getElementById("#height");
-            const input3 = document.getElementById("#color");
+            const width = document.getElementById("width");
+            const height = document.getElementById("height");
+            const color = document.getElementById("color");
             const div = document.querySelector('div');
             const p = document.querySelector('#info');
             const pp = document.querySelector('#info2')
             przycisk.addEventListener('click', function () {
-            let szerokosc = input1.value;
-            let wysokosc = input2.value;
-            let kolor = input3.value;
+            let szerokosc = width.value;
+            let wysokosc = height.value;
+            let kolor = color.value;
 
             let wysokoscc = parseFloat(szerokosc);
             let szerokoscc = parseFloat(wysokosc);

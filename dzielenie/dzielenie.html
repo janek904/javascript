@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Dzielenie z resztą
+    </h1>
+    <h4>
+        Podaj dwie liczby całkowite
+    </h4>
+    <p>
+    <input type="number" id="jeden"> :
+    <input type="number" id="dwa">=
+    <input type="number" id="suma" readonly>reszta
+    <input type="number" id="reszta" readonly>
+    </p>
+    <script>
+        let jeden = document.getElementById("jeden")
+        let dwa = document.getElementById("dwa")
+        let suma = document.getElementById("suma")
+        jeden.addEventListener("change", function(){
+            jeden.value = Math.trunc(jeden.value)
+            druga.value = Math.trunc(dwa.value)
+            suma.setAttribute("value", Math.trunc(jeden.value / dwa.value));
+            reszta.setAttribute("value", Math.trunc(jeden.value % dwa.value));
+        })
+        dwa.addEventListener("change", function(){
+            suma.setAttribute("value", Math.trunc(jeden.value / dwa.value));
+            reszta.setAttribute("value", Math.trunc(jeden.value % dwa.value));
+        })
+    </script>
+</body>
+</html>
