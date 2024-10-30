@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+background-color:lightyellow;
+color: lightcoral;
+font-style: verdana;
+font-size: 16px;
+}
+fieldset{
+border: 2px solid coral;
+}
+#pierwwyraz, #drugiwyraz, #sumciag{
+border: 2px solid coral;
+background-color:lightgoldenrodyellow;
+color: brown;
+width:100px;
+}
+#przycisk{
+ border: 2px solid coral;
+background-color:lightgoldenrodyellow;
+color: brown;
+}
+</style>
+</head>
+<body>
+    <fieldset>
+<legend>Suma n początkowych wyrazów ciągu arytmetycznego </legend>
+<p> Podaj pierwszy wyraz ciągu: a<sub>1</sub> = <input type="number" id="pierwwyraz">(a<sub>1</sub> &#8712; &Ropf;) </p>                                
+<p>Podaj drugi wyraz ciągu: a<sub>2</sub> = <input type="number" id="drugiwyraz">(a<sub>2</sub> &#8712; &Ropf;) </p>
+<p>Dla ilu wyrazów ciągu oblizczyć sumę: n = <input type="number" id="sumciag">(n &#8712; &Nopf;, n ≥ 1 ) </p>
+<input type="button" id="przycisk" value="Dla danego n wypisz max.3 początkowe i 3 końcowe wyrazy ciągu oraz oblicz jego sumę">
+<div id="wyraz"></div>
+<p id="suma"></p>
+
+
+
+<script src="ciag_arytmetyczny.js"></script>
+</fieldset>
+
+
+
+
+
+
+
+
+</body>
+</html>
