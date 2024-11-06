@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id=jan>Jan Chryzostom Pasek z Gosławic herbu Doliwa</p>
+    <p id=pusto></p>
+    <button type="submit" type="wyślij" id="but">Policz znaki</button>
+</body>
+<script>
+const akapit = document.getElementById('jan');
+const akapit2 = document.getElementById('pusto');
+const button = document.getElementById('but');
+button.addEventListener('click', function(){
+akapit2.innerHTML = "Tekst powyżej ma długość " + akapit.textContent.length + " znaków";
+akapit2.style.padding = "5px";
+akapit2.style.backgroundColor= "#ffdfd3";
+})
+</script>
+</html>

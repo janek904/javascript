@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="akapit1">Fryderyk Franciszek Chopin - polski kompozytor i pianista</p>
+    <p id="akapit2"></p>
+    <button type="submit" type="przyciski" id="but1">Wytnij znaki od 9 do 19</button>
+    <p id="akapit3"></p>
+    <button type="submit" type="przyciski" id="but2">Wytnij znaki od 27 do końca</button>
+    <script>
+const akapit1 = document.getElementById('akapit1');
+const akapit2 = document.getElementById('akapit2');
+const akapit3 = document.getElementById('akapit3');
+const but1 = document.getElementById('but1');
+const but2 = document.getElementById('but2');
+but1.addEventListener('click', function(){
+akapit2.innerHTML = akapit1.textContent.substring(19,9);
+akapit2.style.border ="4px dotted crimson";
+akapit2.style.padding ="8px";
+akapit2.style.width = "70px";
+
+
+
+})
+but2.addEventListener('click', function(){
+akapit3.innerHTML = akapit1.textContent.substring(27);
+akapit3.style.border ="3px double crimson";
+akapit3.style.padding ="8px";
+akapit3.style.width ="200px";
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="akapit1">Mikołaj Kopernik - polski polihistor pochodzenia niemieckiego</p>
+    <p id="akapit2"></p>
+    <button type="submit" type="przyciski" id="but1">Wytnij znaki od 26 do 36</button>
+    <p id="akapit3"></p>
+    <button type="submit" type="przyciski" id="but2">Wytnij znaki od końca: od 5 do 12</button>
+    
+<script>
+const akapit1 = document.getElementById('akapit1');
+const akapit2 = document.getElementById('akapit2');
+const akapit3 = document.getElementById('akapit3');
+const but1 = document.getElementById('but1');
+const but2 = document.getElementById('but2');
+
+but1.addEventListener('click', function(){
+akapit2.innerHTML = akapit1.textContent.slice(26,36);
+akapit2.style.fontSize ="30px";
+akapit2.style.fontWeight ="bold";
+akapit2.style.textShadow ="3px 3px 5px red";
+})
+
+but2.addEventListener('click', function(){
+    akapit3.innerHTML = akapit1.textContent.slice(-12,-5);
+    akapit3.style.fontSize = "30px";
+    akapit3.style.fontStyle = "italic";
+    akapit3.style.textShadow = "2px 2px blue";
+
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
