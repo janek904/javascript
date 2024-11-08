@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="akapit">Stefan Banach</p> 
+    <button type="submit" type="przyciski" id="but1">Wypełnij tekst na początku podkreśleniami, aby miał długość 20 znaków</button>
+    <br><br>
+    <button type="submit" type="przyciski" id="but2">Wypełnij tekst na końcu kropkami, aby miał długość 30 znaków</button> 
+    <script>
+const akapit1 = document.getElementById('akapit');
+const but1 = document.getElementById('but1');
+const but2 = document.getElementById('but2');
+but1.addEventListener('click', function(){
+    akapit1.innerHTML = akapit1.textContent.padStart(20,"_");
+})
+but2.addEventListener('click', function(){
+    akapit1.innerHTML = akapit1.textContent.padEnd(30,".");
+})
+
+
+
+
+
+    </script>
+ 
+</body>
+</html>

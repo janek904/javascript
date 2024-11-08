@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="akapit">0|1|1|2|3|5|8</p>
+    <button type="submit" type="przyciski" id="but1">Utwórz tablicę liczb i wyświetl ją w konsoli</button> 
+    <br><br>
+    <p id="akapit2">Jak nazywamy rozgrywanie w całości albo we fragmentach danej gry komputerowej z zamiarem jak najszybszego jej ukończenia? Speedrun</p>
+    <button type="submit" type="przyciski" id="but2">Utwórz tablicę wyrazów, ale w konsoli wyświetl tylko 17 pierwszych elementów tablicy</button> 
+<script>
+const akapit1 = document.getElementById('akapit');
+const akapit2 = document.getElementById('akapit2')
+const but1 = document.getElementById('but1');
+const but2 = document.getElementById('but2');
+but1.addEventListener('click', function(){
+    let wartość = akapit1.innerText.split("|");
+    console.table([wartość[0], wartość[1],wartość[2],wartość[3],wartość[4],wartość[5],wartość[6]])
+})
+but2.addEventListener('click', function(){
+    let wartość = akapit2.innerText.split(" ");
+    console.table([wartość[0], wartość[1],wartość[2],wartość[3],wartość[4],wartość[5],wartość[6],wartość[7], wartość[8],wartość[9],wartość[10],wartość[11],wartość[12],wartość[13],wartość[14],wartość[15],wartość[16]])
+})
+
+
+
+
+
+
+
+
+    
+</script>
+</body>
+</html>
