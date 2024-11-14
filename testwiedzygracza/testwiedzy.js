@@ -97,70 +97,174 @@ odp8.addEventListener('click', function(){
  }
  })
 
- let gwiazdka = 0 
+ let gwiazdka1 = 0;
  p1.addEventListener('click', function(){
-gwiazdka ++;
-if(gwiazdka == 1){
-    p1.innerHTML = '&blk34;';
-    sp1.innerHTML = '*** (3)';
-}
-if(gwiazdka == 2){
-    p1.innerHTML = '&blk12;';
-    sp1.innerHTML= 'l** (3)';
-}
-if(gwiazdka == 3){
-    p1.innerHTML = '&blk14;';
-    sp1.innerHTML= 'l*g (3)';
-}
-if(gwiazdka == 4){
-    p1.remove();
-    
-}
-
+    gwiazdka1++;
+    if(gwiazdka1 == 1){
+        p1.innerHTML = "&blk34;";
+        sp1.innerText = "* (3)";
+    }
+    if(gwiazdka1 == 2){
+        p1.innerHTML = "&blk12;";
+        sp1.innerText = "l** (3)"
+    }
+    if(gwiazdka1 == 3){
+        p1.innerHTML = "&blk14;";
+        sp1.innerText = "l*g (3)";
+    }
+    if(gwiazdka1 == 4){
+        p1.remove();
+        sp1.innerText = (strong1.hidden=false);
+        odp1.remove();
+    }
  })
- 
- let gwiazdka1 = 0 
+let gwiazdka2 = 0;
  p2.addEventListener('click', function(){
-gwiazdka1 ++;
-if(gwiazdka1 == 1){
-    p2.innerHTML = '&blk34;';
-    sp2.innerHTML = '**** (4)';
-}
-if(gwiazdka1 == 2){
-    p2.innerHTML = '&blk12;';
-    sp2.innerHTML= 'l*** (4)';
-}
-if(gwiazdka1 == 3){
-    p2.innerHTML = '&blk12;';
-    sp2.innerHTML= 'l**t (4)';
-}
-if(gwiazdka1 == 4){
-    p2.innerHTML = '&blk12;';
-    sp2.innerHTML= 'l*ot (4)';
-}
+    gwiazdka2++;
+    if(gwiazdka2 == 1){
+        p2.innerHTML = "&blk34;";
+        sp2.innerText = "** (4)";
+    }
+    if(gwiazdka2 == 2){
+        p2.innerHTML = "&blk12;";
+        sp2.innerText = "l*** (4)";
+    }
+    if(gwiazdka2 == 3){
+        p2.innerHTML = "&blk14;";
+        sp2.innerText = "l**t (4)";
+    }
+    if(gwiazdka2 == 4){
+        p2.remove();
+        sp2.innerText = (strong2.hidden=false);
+        odp2.remove();
+    }
+    
  })
- 
- let gwiazdka2 = 0 
+let gwiazdka3 = 0;
  p3.addEventListener('click', function(){
-gwiazdka2 ++;
-if(gwiazdka2 == 1){
-    p3.innerHTML = '&blk34;';
-    sp3.innerHTML = '**** (4)';
-}
-if(gwiazdka2 == 2){
-    p3.innerHTML = '&blk12;';
-    sp3.innerHTML= 'n*** (4)';
-}
-if(gwiazdka2 == 3){
-    p3.innerHTML = '&blk14;';
-    sp3.innerHTML= 'n**b (4)';
-}
-if(gwiazdka2 == 4){
-    p3.innerHTML = '&blk12;';
-    sp3.innerHTML= 'n*ob (4)';
-}
+    gwiazdka3++;
+    if(gwiazdka3 == 1){
+        p3.innerHTML = "&blk34;";
+        sp3.innerText = "** (4)";
+    }
+    if(gwiazdka3 == 2){
+        p3.innerHTML = "&blk12;";
+        sp3.innerText = "n*** (4)";
+    }
+    if(gwiazdka3 == 3){
+        p3.innerHTML = "&blk14;";
+        sp3.innerText = "n**b (4)";
+    }
+    if(gwiazdka3 == 4){
+        p3.remove();
+        sp3.innerText = (strong3.hidden=false);
+        odp3.remove();
+    }
  })
- 
+let gwiazdka4 = 0;
+ p4.addEventListener('click', function(){
+    gwiazdka4++;
+    if(gwiazdka4 == 1){
+        p4.innerHTML = "&blk34;";
+        sp4.innerText = "**** (6)";
+    }
+    if(gwiazdka4 == 2){
+        p4.innerHTML = "&blk12;";
+        sp4.innerText = "a***** (6)";
+    }
+    if(gwiazdka4 == 3){
+        p4.innerHTML = "&blk14;";
+        sp4.innerText = "a****t (3)";
+    }
+    if(gwiazdka4 == 4){
+        p4.remove();
+        sp4.innerText = (strong4.hidden=false);
+        odp4.remove();
+    }
+ })
+let gwiazdka5 = 0;
+ p5.addEventListener('click', function(){
+    gwiazdka5++;
+    if(gwiazdka5 == 1){
+        p5.innerHTML = "&blk34;";
+        sp5.innerText = "**** (6)";
+    }
+    if(gwiazdka5 == 2){
+        p5.innerHTML = "&blk12;";
+        sp5.innerText = "f***** (6)";
+    }
+    if(gwiazdka5 == 3){
+        p5.innerHTML = "&blk14;";
+        sp5.innerText = "f****y (6)";
+    }
+    if(gwiazdka5 == 4){
+        p5.remove();
+        sp5.innerText = (strong5.hidden=false);
+        odp5.remove();
+    }
+ })
+let gwiazdka6 = 0;
+ p6.addEventListener('click', function(){
+    gwiazdka6++;
+    if(gwiazdka1 == 1){
+        p6.innerHTML = "&blk34;";
+        sp6.innerText = "**** (6)";
+    }
+    if(gwiazdka6 == 2){
+        p6.innerHTML = "&blk12;";
+        sp6.innerText = "h***** (6)";
+    }
+    if(gwiazdka6 == 3){
+        p6.innerHTML = "&blk14;";
+        sp6.innerText = "h****x (6)";
+    }
+    if(gwiazdka6 == 4){
+        p6.remove();
+        sp6.innerText = (strong6.hidden=false);
+        odp6.remove();
+    }
+ })
+let gwiazdka7 = 0;
+ p7.addEventListener('click', function(){
+    gwiazdka7++;
+    if(gwiazdka7 == 1){
+        p7.innerHTML = "&blk34;";
+        sp7.innerText = "***** (7)";
+    }
+    if(gwiazdka7 == 2){
+        p7.innerHTML = "&blk12;";
+        sp7.innerText = "c****** (7)";
+    }
+    if(gwiazdka7 == 3){
+        p7.innerHTML = "&blk14;";
+        sp7.innerText = "c*****g (3)";
+    }
+    if(gwiazdka7 == 4){
+        p7.remove();
+        sp7.innerText = (strong7.hidden=false);
+        odp7.remove();
+    }
+ })
+let gwiazdka8 = 0;
+ p8.addEventListener('click', function(){
+    gwiazdka8++;
+    if(gwiazdka8 == 1){
+        p8.innerHTML = "&blk34;";
+        sp8.innerText = "***** (7)";
+    }
+    if(gwiazdka8 == 2){
+        p8.innerHTML = "&blk12;";
+        sp8.innerText = "r****** (7)";
+    }
+    if(gwiazdka8 == 3){
+        p8.innerHTML = "&blk14;";
+        sp8.innerText = "r*****n (7)";
+    }
+    if(gwiazdka8 == 4){
+        p8.remove();
+        
+    }
+ })
  
  
      
