@@ -114,7 +114,7 @@ odp8.addEventListener('click', function(){
     }
     if(gwiazdka1 == 4){
         p1.remove();
-        sp1.innerText = (strong1.hidden=false);
+        sp1.remove() = (strong1.hidden=false);
         odp1.remove();
     }
  })
@@ -135,7 +135,7 @@ let gwiazdka2 = 0;
     }
     if(gwiazdka2 == 4){
         p2.remove();
-        sp2.innerText = (strong2.hidden=false);
+        sp2.remove() = (strong2.hidden=false);
         odp2.remove();
     }
     
@@ -157,7 +157,7 @@ let gwiazdka3 = 0;
     }
     if(gwiazdka3 == 4){
         p3.remove();
-        sp3.innerText = (strong3.hidden=false);
+        sp3.remove() = (strong3.hidden=false);
         odp3.remove();
     }
  })
@@ -178,7 +178,7 @@ let gwiazdka4 = 0;
     }
     if(gwiazdka4 == 4){
         p4.remove();
-        sp4.innerText = (strong4.hidden=false);
+        sp4.remove() = (strong4.hidden=false);
         odp4.remove();
     }
  })
@@ -199,7 +199,7 @@ let gwiazdka5 = 0;
     }
     if(gwiazdka5 == 4){
         p5.remove();
-        sp5.innerText = (strong5.hidden=false);
+        sp5.remove() = (strong5.hidden=false);
         odp5.remove();
     }
  })
@@ -220,7 +220,7 @@ let gwiazdka6 = 0;
     }
     if(gwiazdka6 == 4){
         p6.remove();
-        sp6.innerText = (strong6.hidden=false);
+        sp6.remove() = (strong6.hidden=false);
         odp6.remove();
     }
  })
@@ -241,7 +241,7 @@ let gwiazdka7 = 0;
     }
     if(gwiazdka7 == 4){
         p7.remove();
-        sp7.innerText = (strong7.hidden=false);
+        sp7.remove() = (strong7.hidden=false);
         odp7.remove();
     }
  })
@@ -262,6 +262,8 @@ let gwiazdka8 = 0;
     }
     if(gwiazdka8 == 4){
         p8.remove();
+        sp8.remove() = (strong8.hidden=false);
+        odp8.remove()
         
     }
  })
