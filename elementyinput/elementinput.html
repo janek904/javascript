@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form id="formularz"> </form>
+    
+    
+<script>
+for (let i = 1; i < 101; i++){
+const input1 = document.createElement('input');
+const formularz = document.getElementById('formularz');
+input1.type = "text";
+input1.id = "input1" + i;
+input1.placeholder = 'Element numer' + i;
+input1.name ="dowolna nazwa";
+input1.style.margin = '10px';
+input1.style.boxShadow = '5px lightblue';
+formularz.appendChild(input1);
+}
+    </script>
+</body>
+</html>
